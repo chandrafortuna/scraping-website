@@ -1,0 +1,20 @@
+<h1> Welcome</h1>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>
+    {{#if published}}
+		{{content}}
+	{{/if}}
+	</h1>
+  </div>
+</div>
+
+<div class="row">
+{{#each people}}
+	<div class="col-md-4">
+    	<p>{{this.firstName}} {{this.lastName}}</p>
+  	</div>
+{{/each}}
+
+</div>
